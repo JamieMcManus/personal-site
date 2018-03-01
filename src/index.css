@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  
 }
 
 
@@ -158,22 +159,24 @@ footer{
 textarea { 
   text-align: center;
   resize:none;
+  border-bottom:5px solid white !important;
   
  }
 
 input { 
   text-align: center;
+  border-bottom:5px solid white !important;
  }
 
  input:focus { 
   outline: none !important;
-  border-bottom:2px solid red !important;
+  border-bottom:5px solid skyblue !important;
   
 }
 
 textarea:focus {
       outline: none !important;
-  border-bottom:2px solid red !important;
+  border-bottom:5px solid skyblue !important;
   
 }
 .form-control{
@@ -208,33 +211,37 @@ textarea:focus {
 
 
  .techIcons{
-  width:60px;
-  display:inline !important; 
-  margin:5px;
+  width:20%;
+  display:inline-block !important; 
+  max-width:40px;
+  margin:4px;
   }
  .csharpImage,.dotNetImage{
-   width:60px;
+  width:20%;
  }
  .jsImage{
-   width:55px;
-   margin:5px;
-   margin-left:15px;
+  width:20%;
+   
  }
  .reactImage{
-   width:70px;
+  width:20%;
  }
  .sqlImage{
-   width:60px;
+  width:20%;
  }
  .imageCards{
    margin-left:0px;
    padding:0px !important;
+   border:1px solid pink;
  }
 
 /* Navbar style */
  .navbar-nav li a{
-   font-size:16px;
+   font-size:20px;
    padding-top:0px;
+   line-height: 33px !important;
+   
+   color:white !important;
  }
  
 
@@ -252,8 +259,84 @@ textarea:focus {
 }
 
 .navbar-custom {
-  background-color: #0d0c0c;
+  
   border-color: #E7E7E7;
+}
+
+.navbar-brand{
+   
+    background-image:url("/images/rocket.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+    width:60px;
+    height:50px !important;
+    margin: 5px 25px 0px 25px;
+    position: relative;
+    left: 25px;
+}
+
+
+
+.navbar-custom {
+  background-color: #191818!important;;
+  border-color: #E7E7E7;
+  z-index:9;
+}
+
+.brandLogo{
+  width:45px;
+
+}
+
+/* Rocket Animation */
+@-webkit-keyframes takeoff {
+  0% {
+      left: 20;
+      top:15;
+      
+    }
+    50% {
+      left: 30px;
+      -webkit-transform: rotate(90deg);
+    }
+     60% {
+      
+      -webkit-transform: rotate(180deg);
+    }
+    
+    100% {
+      left: 20px;
+      
+    }
+  }
+@keyframes takeoff {
+    0% {
+      left: 20;
+      top: 0;
+    }
+    50% {
+      left: 30px;
+      transform: rotate(90deg);
+    }
+     60% {
+      
+      transform: rotate(180deg);
+    }
+    
+    100% {
+      left: 20px;
+      
+    }
+  }
+.navbar-brand:hover {
+  background-image:url("/images/rocketWithFire.png");
+  -webkit-animation: 5000ms takeoff infinite;
+  animation: 5000ms takeoff infinite;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  overflow:hidden;
 }
  
 
