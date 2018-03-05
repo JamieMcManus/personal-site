@@ -1,0 +1,18 @@
+.socialMediaIcons{
+    width:50px;
+    height:50px;
+    padding:1px;
+}
+.mediaBar {
+   left: 0;
+   position: fixed;
+   top: 30%;
+   z-index:5;
+}
+.mediaBar ul{
+    padding:3px;
+}
+.socialMediaIcons:hover {
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+}

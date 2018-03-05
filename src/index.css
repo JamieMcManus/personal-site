@@ -1,3 +1,7 @@
+/* import other css files */
+@import url("socialMediaSideBar.css");
+
+
 body {
   margin: 0;
   padding: 0;
@@ -60,6 +64,11 @@ hr{
 
 
 /*footer styles */
+.button{
+  border-radius:0px !important;
+  border: none;
+}
+
 .foot{
   background-color:#191818;
   height:400px;
@@ -337,6 +346,22 @@ textarea:focus {
 .navbar .navbar-collapse {
   text-align: center;
   overflow:hidden;
+}
+
+li span{
+  position: absolute;
+  display:block;
+  left: 8px;
+  bottom:12px;
+  margin:0 auto;
+  height: 0px;   
+  width: 0px;
+  transition: width 1s ease;
+  background-color: white;
+}
+li:hover span{
+  height:2px; 
+  width:80%; 
 }
  
 
