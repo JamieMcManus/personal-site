@@ -1,25 +1,40 @@
 import React from 'react';
 
+export default ({data,selectedId,selectedProject})=>{
 
-export default ({data,selectedId})=>{
-    
     const ProjectDetails  =data.map(Project =>{
         if(Project.id ===selectedId){
-        return (
-            <div key={Project.id} className="projectDetails">
-                <h4>{Project.title}</h4>
-                <p>{Project.description}</p>
-                <a href={Project.link} >Here</a>
-             </div> 
-        ) }
-        else {
-            return null
-        }
+                 console.log(Project.imagePath)// 
+                // get the tech tags of the project as li's
+                const TechList = Project.techList.map((tech,i) => {
+                    console.log(tech,i)// 
+                    return (
+                    <li key={i}> {tech} </li>
+                    )
+                })
+                return (
+                    <div key={Project.id} className="projectDetails">
+                         <i class="fa fa-close projectClose" onClick={() =>selectedProject('')} aria-hidden="true"></i>
+                        <h3 className="projectTitle">{Project.title}</h3>
+                        <div className="projectImage">
+                           <img className="projectImage"src={Project.imagePath} alt={Project.title} />
+                        </div>
+                        <p>{Project.description}</p>
+                        <button className="btn button"><a href={Project.link} >Check it out</a></button>
+                        
+                        <ul className="techTags">
+                            {TechList}
+                        </ul>
+                    </div> 
+                ) }
+                else {
+                    return null
+                }
     }) 
 
     return (
       <div>
-          <p>Project Details</p>
+          
             {ProjectDetails}
         </div>
      

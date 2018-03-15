@@ -4,6 +4,7 @@ import ProjectList from'./components/projectList';
 import Search from'./components/Search';
 import ProjectDetail from './components/ProjectDetails';
 
+
 class App extends Component {
   constructor(props){
       super(props);
@@ -31,7 +32,11 @@ class App extends Component {
       <div className="">
         <Search filterText={this.state.filterText} filterUpdate={this.filterUpdate.bind(this)} selectedProject={this.selectedProject.bind(this)}/>
         <ProjectList filterText={this.state.filterText} data={this.props.data} selectedProject={this.selectedProject.bind(this)}  />
-        <ProjectDetail data={this.props.data} selectedId={this.state.selectedId} /> 
+        <div>
+        <ProjectDetail data={this.props.data} selectedId={this.state.selectedId} selectedProject={this.selectedProject.bind(this)} />
+        
+       
+        </div> 
       </div>
     );
   }

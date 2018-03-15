@@ -5,8 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -39,18 +39,27 @@ body {
   opacity: .7;
 }
 #top{
-  background: linear-gradient(black, MidnightBlue );
   
-  background-image: url("/images/stars.png");
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 88%,
+  #1d5f94),  url("/images/stars.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #about{
-  background: linear-gradient(MidnightBlue,SkyBlue);
+  /*background: linear-gradient(MidnightBlue,SkyBlue); */
+  background: rgb(0,0,0);
+  background: linear-gradient(to bottom,#1d5f94 0%,#2989d8 38%,#2989d8 41%,#207cca 60%,#207cca 72%,#84b5ca 100%);
+
 }
 
 #projects{
   background: linear-gradient(SkyBlue,powderblue );
+
+   
+  background-image: url("/images/GalwayBay.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 a:hover{ 
@@ -202,20 +211,37 @@ textarea:focus {
    margin-bottom:0px !important;
    border: none !important;
    border-radius: 0  !important;
+  
  }
 
 
 /* About section styles */
 .aboutWrapper{ 
   margin-top:350px;
-  background-color:green;
+  
   padding:20px;
   
 
 }
+.aboutWrapper h1{
+  font-weight:bold;
+  color:white;
+  text-shadow:  2px 2px   rgba(26, 6, 0, 0.45);
+  text-align:center;
+}
 
  .aboutText{
    margin-bottom:20px;
+   font-size:21px;
+   color:white;
+   font-weight: 430;
+   line-height:2;
+   text-shadow:  1px 1px   rgba(26, 6, 0, 0.932);
+ }
+ .altText{
+   font-weight: 540;
+   color: rgb(252, 151, 0);
+   text-shadow:  1px 2px   rgba(26, 6, 0, 0.932);
  }
 
 
@@ -241,7 +267,7 @@ textarea:focus {
  .imageCards{
    margin-left:0px;
    padding:0px !important;
-   border:1px solid pink;
+  
  }
 
 /* Navbar style */
@@ -346,6 +372,7 @@ textarea:focus {
 .navbar .navbar-collapse {
   text-align: center;
   overflow:hidden;
+ 
 }
 
 li span{
@@ -363,6 +390,139 @@ li:hover span{
   height:2px; 
   width:80%; 
 }
+
+
+/* Project Styles */
+.projectWrapper{
+  background-color:rgba(249,249,249, 0.5) ;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  
+  padding:0px !important;
+  min-height:186px !important;
+  transition:height 4s ease;
+  z-index:600;
+  
+}
+.appCon{
+  margin-top:250px;
+}
+.appCon h1{
+  font-weight:bold;
+  color:white;
+  text-shadow:  2px 2px   rgba(26, 6, 0, 0.7);
+  text-align:center;
+  margin-bottom:12px;
+}
+
+
+.techTags{
+  list-style: none;
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:0px;
+  padding-left:0px;
+}
+.projectTitle{
+  font-weight:bold;
+  margin-top:5px;
+  
+}
+.techTags li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  padding:5px;
+  margin:2px;
+  background-color:rgba(44, 128, 184, 0.945);
+  border-radius:3px;
+  color:white;
+  font-size:12px;
+}
+.projectDetails {
+  text-align:center; 
+  background-color:rgba(74, 74, 75, 0.945);
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+  min-height:210px;
+  position:relative;
+}
+.projectDetails p{
+  margin: 10px 20px 0px 20px;
+  color:rgba(233, 233, 233, 0.945);
+  font-size:16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.projectClose{
+  font-size:25px;
+  position:absolute;
+  color:white;
+  color:rgba(233, 233, 233, 0.5);
+  top:10px;
+  right:10px;
+}
+.projectDetails button{
+  color:rgba(129, 128, 128, 0.945);
+  font-weight:bold;
+  margin:15px ;
+}
+.projectDetails a{
+  color:rgba(66, 66, 66, 0.945);
+  text-decoration:none;
+}
+.projectDetails a:hover{
+  
+  text-decoration:none;
+}
+
+.projectImage{
+  max-height:150px;
+ margin:0 auto;
+}
+
+
+.filterForm{
+  margin: 12px  35px 0px 35px;
+  text-align:center;
+}
+.filterForm input{
+  width:70%;
+  
+}
+.App ul {
+  list-style: none;
+  text-align:center;
+  margin-top:10px;
+  padding-left:0px;
+}
+.App ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  padding:5px;
+  margin:2px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  border-radius:3px;
+  color:white;
+  font-weight:bold;
+  background-color:rgba(2, 153, 2, 0.945);
+}
+.App ul li:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05); 
+   transform: scale(1.05); 
+}
  
+.Other{
+  background-color:rgba(255, 115, 0, 0.822)   ;
+}
+.Web{
+  background-color:rgb(238, 2, 238) !important ;
+}
+.Desktop{
+  background-color:rgb(255, 38, 0) !important;
+}
 
 

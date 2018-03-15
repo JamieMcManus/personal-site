@@ -14,7 +14,7 @@ export default class Search extends React.Component{
         console.log(this.props.filterText);
         return(
             <header>
-            <form>
+            <form className="filterForm">
                     <input type="text" ref={(value)=>{this.myValue=value}} onChange={this.filterUpdate.bind(this)} placeholder="Type to filter..." />
                 </form>
             </header>
