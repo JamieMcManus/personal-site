@@ -18,37 +18,44 @@ body {
 .test{
 
 }
+.navbar-default {
+  background: none !important;
+  position: absolute !important;
+  width: 100%;
+}
 
 
 .centerText{
   position: absolute;
   
   float: left;
-  top: 47%;
+  top: 50%;
   left: 49%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
+  text-shadow:  2px 2px   rgba(255, 255, 255, 0.45);
 }
 .head{
   font-weight: bold;
   color:white;
+  text-align:center;
 
 }
 .subHead{
-  margin-left:24px;
+  text-align:center;
   color:white;
   opacity: .7;
 }
 #top{
   
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 88%,
-  #1d5f94),  url("/images/stars.png");
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 75%, #1d5f94 100%
+  ),  url("/images/stars.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #about{
   /*background: linear-gradient(MidnightBlue,SkyBlue); */
   background: rgb(0,0,0);
-  background: linear-gradient(to bottom,#1d5f94 0%,#2989d8 38%,#2989d8 41%,#207cca 60%,#207cca 72%,#84b5ca 100%);
+  background: linear-gradient(to bottom,#1d5f94 8%,#2989d8 38%,#2989d8 41%,#207cca 60%,#207cca 72%,#84b5ca 100%);
 
 }
 
@@ -56,12 +63,79 @@ body {
   background: linear-gradient(SkyBlue,powderblue );
 
    
-  background-image: url("/images/GalwayBay.png");
+  background-image: url("/images/GalwayBay3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+.BigRocket{
+  height:500px;
+  top:320px;
+  left:140px;
+  z-index:9;
+  position:absolute;
+  animation: moveBalloon 40s linear infinite;             
+}
+@keyframes moveBalloon {
+  from { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
 
+.Balloon2{
+  height:150px;
+  top:280px;
+  left:600px;
+  z-index:4;
+  position:absolute;
+ 
+  animation: moveBalloon2 50s linear infinite; 
+  animation-delay: 23s;            
+}
+@keyframes moveBalloon2 {
+  from { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+  to   { transform: rotate(-360deg) translateX(60px) rotate(360deg); }
+}
+
+
+
+.clouds{
+  height:600px;
+  top:200px;
+  left:-150px;
+  z-index:7;
+  position:absolute;
+}
+.weatherWrapper{
+  position: relative;
+}
+
+.boatWrapper{
+  position:relative;
+}
+/*
+@media only screen and (min-width: 900px) {
+.boats{
+  height:130px;
+  top:736px;
+  left:400px;
+  z-index:3;
+  position:absolute;
+  animation: moveBoats 200s linear infinite; 
+}
+
+@keyframes moveBoats {
+    0%, 100% {
+      left:30%;
+    }
+    50% {
+      left:60%;
+    }
+  }
+}
+*/
+.container-fluid{
+  overflow:hidden !important;
+}
 a:hover{ 
   -webkit-transform: scale(1.2); 
 }
@@ -80,9 +154,9 @@ hr{
 
 .foot{
   background-color:#191818;
-  height:400px;
+  min-height:400px;
   width:100%;
-  
+ 
  
 }
 .foot h2{
@@ -92,6 +166,16 @@ hr{
 .footText{
   text-align:center;
 }
+.footText p{
+  color:#c7c7c7;
+}
+
+@media only screen and (max-width: 1000px) {
+  .footText{
+    margin-top:0px;
+  }
+}
+
 .footerIcons {
     list-style:none;
    
@@ -217,7 +301,7 @@ textarea:focus {
 
 /* About section styles */
 .aboutWrapper{ 
-  margin-top:350px;
+  margin-top:40%;
   
   padding:20px;
   
@@ -313,7 +397,7 @@ textarea:focus {
 
 
 .navbar-custom {
-  background-color: #191818!important;;
+  /*background-color: #191818!important;; */
   border-color: #E7E7E7;
   z-index:9;
 }
@@ -406,7 +490,8 @@ li:hover span{
   
 }
 .appCon{
-  margin-top:250px;
+  margin-top:10%;
+  z-index:4;
 }
 .appCon h1{
   font-weight:bold;
