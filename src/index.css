@@ -48,7 +48,7 @@ body {
 #top{
   
   background: linear-gradient(to bottom, rgba(255,255,255,0) 75%, #1d5f94 100%
-  ),  url("/images/stars.png");
+  ),  url("images/stars.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -63,7 +63,7 @@ body {
   background: linear-gradient(SkyBlue,powderblue );
 
    
-  background-image: url("/images/GalwayBay3.png");
+  background-image: url("images/GalwayBay3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
