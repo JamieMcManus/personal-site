@@ -384,7 +384,7 @@ textarea:focus {
 
 .navbar-brand{
    
-    background-image:url("/images/rocket.png");
+    background-image:url("images/rocket.png");
     background-repeat:no-repeat;
     background-size: contain;
     width:60px;
@@ -448,7 +448,7 @@ textarea:focus {
     }
   }
 .navbar-brand:hover {
-  background-image:url("/images/rocketWithFire.png");
+  background-image:url("images/rocketWithFire.png");
   -webkit-animation: 5000ms takeoff infinite;
   animation: 5000ms takeoff infinite;
 }
