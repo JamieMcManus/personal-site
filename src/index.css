@@ -113,6 +113,19 @@ body {
 .boatWrapper{
   position:relative;
 }
+
+@media only screen and (max-width: 1400px) {
+  .clouds{
+    height:400px; 
+  }
+  .BigRocket{
+    left:90px;
+  }
+  .Balloon2{
+    left:400px;
+  }
+
+}
 /*
 @media only screen and (min-width: 900px) {
 .boats{
@@ -302,7 +315,7 @@ textarea:focus {
 
 /* About section styles */
 .aboutWrapper{ 
-  margin-top:40%;
+  margin-top:33%;
   
   padding:20px;
   
