@@ -22,6 +22,7 @@ body {
   background: none !important;
   position: absolute !important;
   width: 100%;
+  border:none;
 }
 
 
@@ -482,7 +483,7 @@ li:hover span{
   border-radius:12px;
   overflow:hidden;
   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.6);
-  
+  position:absolute;
   padding:0px !important;
   min-height:186px !important;
   transition:height 4s ease;
@@ -611,3 +612,46 @@ li:hover span{
 }
 
 
+
+/* media queries */
+@media only screen and (max-width: 990px) {
+  .aboutWrapper{
+    margin-top:15%;
+  }
+
+}
+@media only screen and (max-width: 460px) {
+    .aboutText{
+      margin-bottom:0px;
+      text-align:center;
+      font-size:16px;
+    }
+    .aboutWrapper h1{
+      font-size:20px;
+    }
+    .aboutWrapper{
+      margin-top:0px;
+    }
+    .appCon h1{
+      font-size:20px;
+    }
+
+    .projectWrapper ul li{
+        padding:2px;
+    }
+    .projectDetails p{
+      font-size:14px;
+    }
+    .projectImage{
+      height:90px;
+    }
+
+    .downArrow{
+      font-size:70px;
+      margin-top:20%;
+      left:42%;
+    }
+    .navbar-nav{
+      background-color:rgba(0,0,0,0.7);
+    }
+}
