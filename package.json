@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
   "version": "0.1.0",
-  "homepage": "https://jamiemcmanus.github.io/personal-site",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
