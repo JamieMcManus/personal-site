@@ -42,7 +42,7 @@ tag: 'Web',
 description:'A fully mobile responsive site created by using HTML,CSS, JavaScript, Bootstrap. For this site I started learning React to create the single page experience. Each project is a JSON object store in an array that is rendered by React.  ',
 link:'https://github.com/JamieMcManus/personal-site/',
 techList:['HTML','JavaScript','CSS','React','Bootstrap'],
-imagePath:'./images/galwaybay3.jpg'
+imagePath:'./images/galwaybay3.png'
 },
 {
 id: 5,
