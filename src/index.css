@@ -614,14 +614,14 @@ li:hover span{
 
 
 /* media queries */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
   .aboutWrapper{
     margin-top:15%;
 
   }
 
   .aboutText{
-    font-size:18px;
+    font-size:20px;
   }
 }
 @media only screen and (max-width: 990px) {
